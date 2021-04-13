@@ -60,7 +60,7 @@ export default function WorkCard(props) {
     <Card className={classes.card}>
       <CardMedia
         className={classes.cardMedia}
-        image="https://source.unsplash.com/random"
+        image="https://masatoemata.github.io/misaki-abe.github.io/common/img/work/%E4%BD%9C%E5%93%81_201207_0.jpg"
         title="Image title"
       />
       <CardContent className={classes.cardContent}>
