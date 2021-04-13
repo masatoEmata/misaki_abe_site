@@ -20,8 +20,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Route path="/" exact component={TopScreen} />
-      <Route path="/works" exact component={SalesListScreen} />
-      <Route path="/works/detail" exact component={DetailScreen} />
+      <Route path="/works/" exact component={SalesListScreen} />
+      <Route path="/works/detail/" exact component={DetailScreen} />
     </BrowserRouter>
   );
 };
