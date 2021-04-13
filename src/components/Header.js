@@ -7,23 +7,24 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#dde6f0",
     flex: 1,
     alignItems: "center",
-    paddingTop: "25px",
     paddingBottom: "25px",
   },
   appBarTitle: {
-    fontSize: "45px",
+    fontSize: 32,
     fontFamily: "Yu Mincho",
     fontWeight: "bolder",
     color: "#323232",
     "&:hover": {
       color: "#f50057",
     },
+    marginTop: 25,
+    marginBottom: 25,
   },
   appBarMenu: {
     textAlign: "center",
   },
   appBarMenuText: {
-    fontSize: "35px",
+    fontSize: 18,
     fontFamily: "Yu Mincho",
     color: "#323232",
     display: "inline-block",

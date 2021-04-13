@@ -13,7 +13,7 @@ import Switch from "../components/Switch";
 const useStyles = makeStyles((theme) => ({
   listSection: {
     backgroundColor: "#dde6f0",
-    padding: theme.spacing(8, 0, 6),
+    padding: theme.spacing(6, 0, 5),
   },
   cardGrid: {
     flex: 1,
@@ -33,11 +33,7 @@ export default function SalesList() {
         {/* Hero unit */}
         <div className={classes.listSection}>
           <Container maxWidth="sm">
-            <Thread heading={"作品の購入"}>
-              テスト
-              <br />
-              テスト
-            </Thread>
+            <Thread heading={"Oil Painting"}></Thread>
             <div>
               <Grid container spacing={2} justify="center">
                 <Switch />
@@ -45,10 +41,9 @@ export default function SalesList() {
             </div>
           </Container>
         </div>
+        {/* End hero unit */}
         <div className={classes.listSection}>
           <Container className={classes.cardGrid}>
-            {/* End hero unit */}
-
             <Grid container spacing={4}>
               {cards.map((card) => (
                 <Grid item key={card} xs={12} sm={6} md={30}>

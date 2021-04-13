@@ -6,11 +6,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   heading: {
-    fontSize: "35px",
+    fontSize: 25,
     fontFamily: "Yu Mincho",
   },
   passage: {
-    fontSize: "18px",
+    fontSize: 16,
     lineHeight: 2,
     fontFamily: "Yu Mincho",
   },

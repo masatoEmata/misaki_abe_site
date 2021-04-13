@@ -23,10 +23,10 @@ export default function SwitchesGroup() {
       alignItems: "center",
     },
     switch: {
-      padding: "20px",
+      padding: 20,
     },
     passage: {
-      fontSize: "18px",
+      fontSize: 16,
       fontFamily: "Yu Mincho",
     },
   }));
@@ -34,7 +34,7 @@ export default function SwitchesGroup() {
 
   return (
     <div class={classes.container}>
-      <span class={classes.passage}>売却済</span>
+      <span class={classes.passage}>販売中</span>
       <FormControl component="fieldset" class={classes.switchBar}>
         <FormGroup>
           <FormControlLabel
@@ -49,7 +49,7 @@ export default function SwitchesGroup() {
           />
         </FormGroup>
       </FormControl>
-      <span class={classes.passage}>販売中</span>
+      <span class={classes.passage}>全作品</span>
     </div>
   );
 }
