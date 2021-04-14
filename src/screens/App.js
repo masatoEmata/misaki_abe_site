@@ -1,20 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import TopScreen from "./TopScreen";
-import SalesListScreen from "./SalesListScreen";
+import SalesListScreen from "./WorkListScreen";
 import DetailScreen from "./DetailScreen";
-
-const PageTwo = () => {
-  return (
-    <div>
-      PageTwo
-      <Link to="/">
-        <button>show PageOne when you click this!!</button>
-      </Link>
-    </div>
-  );
-};
+import ContactScreen from "./ContactScreen";
+import ProfileScreen from "./ProfileScreen";
 
 const App = () => {
   return (
@@ -22,6 +13,8 @@ const App = () => {
       <Route path="/" exact component={TopScreen} />
       <Route path="/works/" exact component={SalesListScreen} />
       <Route path="/works/detail/" exact component={DetailScreen} />
+      <Route path="/contact/" exact component={ContactScreen} />
+      <Route path="/profile/" exact component={ProfileScreen} />
     </BrowserRouter>
   );
 };

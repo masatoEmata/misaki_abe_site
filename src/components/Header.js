@@ -7,7 +7,7 @@ import HeaderMenuItem from "../components/HeaderMenuItem";
 
 export default function Header(props) {
   let { shadow } = props;
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles(() => ({
     appBar: {
       backgroundColor: "#dde6f0",
       flex: 1,
@@ -15,50 +15,22 @@ export default function Header(props) {
       paddingBottom: "25px",
       boxShadow: shadow,
     },
-    appBarTitle: {
-      marginTop: 25,
-      marginBottom: 25,
-    },
-    menu: {
-      textAlign: "center",
-    },
-    menuItem: {
-      display: "inline-block",
-      marginRight: "30px",
-    },
-    menuItemLink: {
-      fontSize: 18,
-      fontFamily: "Yu Mincho",
-      textDecoration: "none",
-      color: "#323232",
-      "&:hover": {
-        color: "#f50057",
-      },
-    },
-    rootLink: {
-      textDecoration: "none",
-      fontSize: 32,
-      fontFamily: "Yu Mincho",
-      fontWeight: "bolder",
-      color: "#323232",
-      "&:hover": {
-        color: "#f50057",
-      },
-    },
   }));
   const classes = useStyles();
 
   return (
     <AppBar position="relative" className={classes.appBar}>
-      <h1 variant="h6" noWrap className={classes.appBarTitle}>
-        <Link to="/" className={classes.rootLink}>
-          Abe Misaki
+      <h1 variant="h6" noWrap class="appBarTitle">
+        <Link to="/" class="rootLink">
+          Misaki Abe
         </Link>
       </h1>
       <ul className={classes.menu}>
-        <HeaderMenuItem path="/#profile">Profile</HeaderMenuItem>
-        <HeaderMenuItem path="/#contact">Contact</HeaderMenuItem>
-        <HeaderMenuItem path="/works/">Works</HeaderMenuItem>
+        {/* <HeaderMenuItem scrollTo="#sectionOther">Profile</HeaderMenuItem>
+        <HeaderMenuItem scrollTo="#sectionContact">Contact</HeaderMenuItem> */}
+        <HeaderMenuItem pathTo="/profile/">Profile</HeaderMenuItem>
+        <HeaderMenuItem pathTo="/contact/">Contact</HeaderMenuItem>
+        <HeaderMenuItem pathTo="/works/">Works</HeaderMenuItem>
       </ul>
     </AppBar>
   );
