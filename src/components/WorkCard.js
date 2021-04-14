@@ -7,7 +7,7 @@ import NeuButton from "./NeuButton";
 
 export default function WorkCard() {
   return (
-    <Card class="card neumoOutShadow">
+    <Card>
       <CardMedia
         class="cardMedia"
         image="https://masatoemata.github.io/misaki-abe.github.io/common/img/work/%E4%BD%9C%E5%93%81_201207_0.jpg"

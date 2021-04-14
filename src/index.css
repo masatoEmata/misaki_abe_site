@@ -13,6 +13,7 @@
   padding: 10px 25px;
   margin: 10px;
   border-style: none;
+  outline: none;
 }
 .neuButton:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
@@ -29,7 +30,8 @@
 }
 
 input {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   transition: all 0.2s ease-in-out;
   appearance: none;
   border: 0;
@@ -45,7 +47,8 @@ input {
 
 textarea {
   height: 140px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   transition: all 0.2s ease-in-out;
   appearance: none;
   border: 0;
@@ -61,10 +64,6 @@ textarea {
 
 link {
   text-decoration: none;
-}
-
-.container {
-  background-color: #dde6f0;
 }
 
 .mainContainer {
@@ -127,9 +126,10 @@ link {
 .detailImg {
   width: 80%;
 }
-.detailContainer {
+.container {
+  padding-top: 15px;
+  padding-bottom: 60px;
   background-color: #dde6f0;
-  flex: 1;
   text-align: center;
 }
 .detailCard {
@@ -185,9 +185,11 @@ link {
 
 .footer {
   background-color: #dde6f0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 100%;
+  width: 100%;
+  padding-top: 25px;
+  height: 100px;
+  /* position: absolute;
+  bottom: 1px; */
 }
 
 .thread {

@@ -4,6 +4,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Profile from "../components/Profile";
+import NeuButton from "../components/NeuButton";
 
 export default function ContactScreen() {
   return (
@@ -11,8 +12,9 @@ export default function ContactScreen() {
       <CssBaseline />
       <div class="container">
         <Header shadow="none" />
-        <main class="mainContainer">
+        <main class="mainContainer" style={{ textAlign: "center" }}>
           <Profile />
+          <NeuButton path="/contact/">質問する</NeuButton>
         </main>
       </div>
       <Footer />
