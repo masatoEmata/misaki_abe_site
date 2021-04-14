@@ -3,7 +3,6 @@ import FormControl from "@material-ui/core/FormControl";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
-import { makeStyles } from "@material-ui/core/styles";
 
 export default function SwitchesGroup() {
   const [state, setState] = React.useState({
@@ -15,27 +14,11 @@ export default function SwitchesGroup() {
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
-  const useStyles = makeStyles((theme) => ({
-    container: {
-      paddingLeft: "20px",
-      height: "100px",
-      display: "flex",
-      alignItems: "center",
-    },
-    switch: {
-      padding: 20,
-    },
-    passage: {
-      fontSize: 16,
-      fontFamily: "Yu Mincho",
-    },
-  }));
-  const classes = useStyles();
 
   return (
-    <div class={classes.container}>
-      <span class={classes.passage}>販売中</span>
-      <FormControl component="fieldset" class={classes.switchBar}>
+    <div class="switchContainer">
+      <span class="passage">販売中</span>
+      <FormControl component="fieldset">
         <FormGroup>
           <FormControlLabel
             control={
@@ -45,11 +28,11 @@ export default function SwitchesGroup() {
                 name="gilad"
               />
             }
-            class={classes.switch}
+            class="switchControl"
           />
         </FormGroup>
       </FormControl>
-      <span class={classes.passage}>全作品</span>
+      <span class="passage">全作品</span>
     </div>
   );
 }
