@@ -21,12 +21,14 @@
 
 .passage {
   font-size: 16px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   line-height: 2;
 }
 .label {
   font-size: 13px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
 }
 
 input {
@@ -41,7 +43,8 @@ input {
   margin-bottom: 10px;
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
 }
 
@@ -58,7 +61,8 @@ textarea {
   margin-bottom: 10px;
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
 }
 
@@ -111,7 +115,8 @@ link {
 
 .caption {
   font-size: 18px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   text-align: center;
   letter-spacing: 0.04rem;
   color: #aaaaaa;
@@ -155,7 +160,8 @@ link {
 }
 .appBarMenuItemLink {
   font-size: 18px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   text-decoration: none;
   color: #323232;
 }
@@ -165,7 +171,8 @@ link {
 .rootLink {
   text-decoration: none;
   font-size: 32px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   font-weight: bolder;
   color: #323232;
 }
@@ -197,11 +204,13 @@ link {
 }
 .threadHeading {
   font-size: 25px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
 }
 .threadHeadingMini {
   font-size: 20px;
-  font-family: Yu Mincho;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
 }
 .card {
   height: 100%;
