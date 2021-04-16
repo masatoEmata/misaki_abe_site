@@ -12,6 +12,8 @@ import Switch from "../components/Switch";
 const cards = [1, 2, 3, 4, 5];
 
 export default function SalesList() {
+  document.title = "作品の一覧と購入 | 阿部美咲 Misaki Abe";
+
   return (
     <React.Fragment>
       <CssBaseline />

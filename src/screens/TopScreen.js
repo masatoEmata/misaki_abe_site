@@ -15,6 +15,8 @@ export default function TopScreen() {
     head.appendChild(scriptUrl);
   }, []);
 
+  document.title = "TOPページ | 阿部美咲 Misaki Abe";
+
   return (
     <React.Fragment>
       <CssBaseline />

@@ -7,6 +7,8 @@ import Profile from "../components/Profile";
 import NeuButton from "../components/NeuButton";
 
 export default function ContactScreen() {
+  document.title = "プロフィール | 阿部美咲 Misaki Abe";
+
   return (
     <React.Fragment>
       <CssBaseline />

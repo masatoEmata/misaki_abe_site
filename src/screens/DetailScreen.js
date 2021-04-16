@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import ScrollTop from "../components/ScrollTop";
 
 export default function DetailScreen() {
+  document.title = "作品詳細 | 阿部美咲 Misaki Abe";
+
   return (
     <React.Fragment>
       <CssBaseline />
