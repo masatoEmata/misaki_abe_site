@@ -11,7 +11,6 @@ import WorkCard from "../components/WorkCard";
 import Switch from "../components/Switch";
 
 // const cards = [1, 2, 3, 4, 5];
-
 export default function SalesList() {
   const meta = {
     title: "作品の一覧と購入 | 阿部美咲 Misaki Abe",
@@ -102,7 +101,6 @@ export default function SalesList() {
                     img_url="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fbefore-going-to-sleep-202111.jpg?alt=media&token=937ce7d7-4939-4d48-9f21-3e0c8f4e8248"
                   />
                 </Grid>
-
                 {/* ))} */}
               </Grid>
             </Container>
