@@ -4,7 +4,6 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 // import CardMedia from "@material-ui/core/CardMedia";
 import NeuButton from "./NeuButton";
-import { Description } from "@material-ui/icons";
 
 export default function WorkCard(props) {
   const { title, description, size, create_date, img_url } = props;
