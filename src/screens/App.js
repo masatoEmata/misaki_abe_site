@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BrowserRouter, Route } from "react-router-dom";
 
 import TopScreen from "./TopScreen";
@@ -20,3 +21,5 @@ const App = () => {
 };
 
 export default App;
+
+// 外部ファイル読み込み https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
