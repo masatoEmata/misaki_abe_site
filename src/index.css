@@ -1,0 +1,236 @@
+.neumoOutShadow {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+}
+.neuButton {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+  background-color: #dde6f0;
+  padding: 10px 25px;
+  margin: 10px;
+  border-style: none;
+  outline: none;
+}
+.neuButton:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+.passage {
+  font-size: 16px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  line-height: 2;
+}
+.label {
+  font-size: 13px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
+
+input {
+  max-width: 400px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+}
+
+textarea {
+  height: 140px;
+  max-width: 400px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+}
+
+link {
+  text-decoration: none;
+}
+
+.mainContainer {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.topWorkDisplay {
+  text-align: center;
+}
+
+.topSingleDisplay {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.topSingleDisplayItem {
+  text-align: center;
+  display: inline-block;
+}
+.topSingleDisplayImg {
+  width: 54%;
+}
+.topSingleText {
+  margin-bottom: 100px;
+}
+.multiDisplay {
+  display: flex;
+  margin-top: 100px;
+}
+.multiDisplayLarge {
+  margin-top: 180px;
+  align-items: center;
+}
+.multiDisplayLargeImg {
+  max-width: 90%;
+  height: auto;
+}
+.multidisplaySmall {
+  align-items: center;
+}
+
+.multiDisplaySmallImg {
+  max-width: 50%;
+}
+
+.caption {
+  font-size: 18px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  text-align: center;
+  letter-spacing: 0.04rem;
+  color: #aaaaaa;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+.sectionOther {
+  padding-bottom: 100px;
+}
+
+.detailImg {
+  width: 80%;
+}
+.container {
+  padding-top: 15px;
+  padding-bottom: 60px;
+  background-color: #dde6f0;
+  text-align: center;
+}
+.detailCard {
+  background-color: #dde6f0;
+  border-style: none;
+  box-shadow: none;
+}
+.listSection {
+  background-color: #dde6f0;
+  padding: 10px;
+}
+.listCardGrid {
+  flex: 1;
+  background-color: #dde6f0;
+}
+.appBarTitle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.appBarMenuItem {
+  display: inline-block;
+  margin-right: 30px;
+}
+.appBarMenuItemLink {
+  font-size: 18px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  text-decoration: none;
+  color: #323232;
+}
+.appBarMenuItemLink:hover {
+  color: #f50057;
+}
+.rootLink {
+  text-decoration: none;
+  font-size: 32px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+  font-weight: bolder;
+  color: #323232;
+}
+.rootLink:hover {
+  color: #f50057;
+}
+
+.switchContainer {
+  padding-left: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.switchControl {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #dde6f0;
+  width: 100%;
+  padding-top: 25px;
+  height: 100px;
+  /* position: absolute;
+  bottom: 1px; */
+}
+
+.thread {
+  text-align: center;
+}
+.threadHeading {
+  font-size: 25px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
+.threadHeadingMini {
+  font-size: 20px;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cardContainer {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.cardMedia {
+  /* padding-top: 100%;
+  background-size: cover; */
+  width: 100%;
+}
+.cardContent {
+  flex-grow: 1;
+  background-color: #dde6f0;
+  padding: 0;
+}
+.cardContentInner {
+  padding: 16px;
+}
