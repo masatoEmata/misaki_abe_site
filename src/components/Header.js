@@ -20,12 +20,12 @@ export default function Header(props) {
 
   return (
     <AppBar position="relative" className={classes.appBar}>
-      <h1 variant="h6" noWrap class="appBarTitle">
+      <h1 variant="h6" class="appBarTitle">
         <Link to="/" class="rootLink">
           Misaki Abe
         </Link>
       </h1>
-      <ul className={classes.menu}>
+      <ul>
         {/* <HeaderMenuItem scrollTo="#sectionOther">Profile</HeaderMenuItem>
         <HeaderMenuItem scrollTo="#sectionContact">Contact</HeaderMenuItem> */}
         <HeaderMenuItem pathTo="/profile/">Profile</HeaderMenuItem>

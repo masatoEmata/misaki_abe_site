@@ -4,12 +4,12 @@ import { useHistory } from "react-router-dom";
 
 export default function NeuButton(props) {
   const history = useHistory();
-  const { children, path } = props;
+  const { children, path, work } = props;
   function handleClick() {
     if (path === "goBack") {
       history.goBack();
     } else if (path) {
-      history.push(path);
+      history.push({ pathname: path, state: { work: work } });
     }
   }
   return (

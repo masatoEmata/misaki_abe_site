@@ -6,7 +6,9 @@ import CardContent from "@material-ui/core/CardContent";
 import NeuButton from "./NeuButton";
 
 export default function WorkCard(props) {
-  const { title, description, size, create_date, img_url } = props;
+  const { title, description, size, create_date, img_url, path } = props;
+  const work = props;
+  const availabile_label = work.availability ? "販売中" : null;
 
   return (
     <Card class="cardContainer">
@@ -17,11 +19,14 @@ export default function WorkCard(props) {
           <h3 class="threadHeadingMini">{title}</h3>
           <p class="passage">{description}</p>
           <p class="passage">
-            ({size}, {create_date}制作)
+            {size}, {create_date}
           </p>
         </CardContent>
-        <CardActions>
-          <NeuButton path="/works/detail/">詳しく</NeuButton>
+        <CardActions class="cardAction">
+          <NeuButton path={`/works/detail/${path}/`} work={work}>
+            詳しく
+          </NeuButton>
+          <label class="cardActionLabel">{availabile_label}</label>
         </CardActions>
       </CardContent>
     </Card>

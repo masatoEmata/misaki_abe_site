@@ -1,8 +1,17 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import Thread from "./Thread";
 
 export default function Contact() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://sdk.form.run/js/v2/formrun.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="sectionContact" class="sectionOther">
       <Thread heading={"Contact"}>
