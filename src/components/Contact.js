@@ -1,7 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Thread from "./Thread";
 
 export default function Contact() {
+  const [detail, setDetail] = useState();
+  const [email, setEmail] = useState();
+  const [buttonLabel, setButtonLabel] = useState();
+
+  function handleChange(e) {
+    switch (e.target.name) {
+      case "お問い合わせ":
+        setDetail(e.target.value);
+        break;
+      case "メールアドレス":
+        setEmail(e.target.value);
+        break;
+      default:
+    }
+  }
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://sdk.form.run/js/v2/formrun.js";
@@ -12,20 +28,26 @@ export default function Contact() {
     };
   }, []);
 
+  useEffect(() => {
+    if (detail && email) {
+      setButtonLabel("送信");
+    } else {
+      setButtonLabel("ご入力後に送信");
+    }
+  });
+
   return (
     <section id="sectionContact" class="sectionOther">
       <Thread heading={"Contact"}>
         <form
-          className="formrun"
           action="https://form.run/api/v1/r/mb1qe2q6lkuok0zvdsmv51ip"
           method="post"
         >
           <div>
             <textarea
               name="お問い合わせ"
-              data-formrun-required=""
               placeholder="お問い合わせ内容"
-              class="formrun-has-error"
+              onChange={handleChange}
             ></textarea>
           </div>
           <div>
@@ -33,29 +55,12 @@ export default function Contact() {
               name="メールアドレス"
               type="text"
               data-formrun-type="email"
-              data-formrun-required=""
               placeholder="メールアドレス"
+              onChange={handleChange}
             />
           </div>
-          <div class="_formrun_gotcha" style={{ display: "none" }}>
-            <label for="_formrun_gotcha">
-              If you are a human, ignore this field
-            </label>
-            <input
-              type="text"
-              name="_formrun_gotcha"
-              id="_formrun_gotcha"
-              tabindex="-1"
-            />
-          </div>
-          <button
-            type="submit"
-            data-formrun-error-text="未入力の項目があります"
-            data-formrun-submitting-text="送信中..."
-            data-formrun-default-text="送信"
-            className="neuButton label"
-          >
-            送信
+          <button type="submit" class="neuButton label">
+            {buttonLabel}
           </button>
         </form>
       </Thread>

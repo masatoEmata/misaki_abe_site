@@ -6,6 +6,7 @@ import TopScreen from "./TopScreen";
 import WorkListScreen from "./WorkListScreen";
 import DetailScreen from "./DetailScreen";
 import ContactScreen from "./ContactScreen";
+import ContactThanksScreen from "./ContactThanksScreen";
 import ProfileScreen from "./ProfileScreen";
 
 const firebaseConfig = {
@@ -41,13 +42,8 @@ const App = () => {
     <BrowserRouter>
       <Route path="/" exact component={TopScreen} />
       <Route path="/works/" exact component={WorkListScreen} />
-      {/* <Route path="/works/detail/" exact component={DetailScreen} /> */}
-      {/* <Route
-        path="/works/detail/before-going-to-sleep/"
-        exact
-        component={DetailScreen}
-      /> */}
       <Route path="/contact/" exact component={ContactScreen} />
+      <Route path="/contact/thanks/" exact component={ContactThanksScreen} />
       <Route path="/profile/" exact component={ProfileScreen} />
       {work_paths.map((path) => (
         <Route
@@ -62,5 +58,3 @@ const App = () => {
 };
 
 export default App;
-
-// 外部ファイル読み込み https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
