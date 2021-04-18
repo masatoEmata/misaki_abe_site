@@ -23,9 +23,6 @@ export default function TopScreen() {
     canonical: "/",
     meta: {
       charset: "utf-8",
-      name: {
-        keywords: "react,meta,document,html,tags",
-      },
     },
   };
 
@@ -39,15 +36,15 @@ export default function TopScreen() {
             <section class="topWorkDisplay">
               <section class="topSingleDisplay">
                 <div class="topSingleDisplayItem">
-                  <a href="/work/xxx.html">
+                  <a href="/works/detail/before-going-to-sleep/">
                     <img
                       class="topSingleDisplayImg neumoOutShadow"
-                      src="https://masatoemata.github.io/misaki-abe.github.io/common/img/work/%E4%BD%9C%E5%93%81_201207.jpg"
-                      alt=""
+                      src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fbefore-going-to-sleep.jpg?alt=media&token=f6af4183-b6d3-4ccf-8cf3-6e90a58503a2"
+                      alt="ねむるまえ"
                     />
                   </a>
                   <div>
-                    <p class="caption">XXXXXXX</p>
+                    <p class="caption">ねむるまえ</p>
                   </div>
                 </div>
               </section>
@@ -66,15 +63,15 @@ export default function TopScreen() {
                 <div class="multiDisplayLarge">
                   <div>
                     <div>
-                      <a href="/work/xxx.html">
+                      <a href="/works/detail/day-dream/">
                         <img
                           class="multiDisplayLargeImg neumoOutShadow"
-                          src="https://masatoemata.github.io/misaki-abe.github.io/common/img/work/%E4%BD%9C%E5%93%81_201207_0.jpg"
-                          alt=""
+                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fday-dream_770x770.jpg?alt=media&token=261f047b-93e0-4e88-b614-bc9c8a6a027e"
+                          alt="白昼夢"
                         />
                       </a>
                       <div>
-                        <p class="caption">XXXXXXX</p>
+                        <p class="caption">白昼夢</p>
                       </div>
                     </div>
                   </div>
@@ -82,27 +79,27 @@ export default function TopScreen() {
                 <div class="multiDisplaySmall">
                   <div>
                     <div>
-                      <a href="/work/b06xxxml">
+                      <a href="/works/detail/the-night-before-the-light/">
                         <img
                           class="multiDisplaySmallImg neumoOutShadow"
-                          src="https://masatoemata.github.io/misaki-abe.github.io/common/img/work/%E4%BD%9C%E5%93%81_201207_2.jpg"
-                          alt=""
+                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fthe-night-before-the-light_770x770.JPG?alt=media&token=5d7e6694-dc9d-4656-a32b-2a310e31804c"
+                          alt="光芒前夜"
                         />
                       </a>
                       <div>
-                        <p class="caption">XXXXXXX</p>
+                        <p class="caption">光芒前夜</p>
                       </div>
                     </div>
                     <div>
-                      <a href="/work/b06xxxml">
+                      <a href="/works/detail/air-specimen/">
                         <img
                           class="multiDisplaySmallImg neumoOutShadow"
-                          src="https://masatoemata.github.io/misaki-abe.github.io/common/img/work/%E4%BD%9C%E5%93%81_201207_1.jpg"
-                          alt=""
+                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fair-specimen_770x770.JPG?alt=media&token=d543816f-ec00-4831-a7c6-0b7238a2b262"
+                          alt="空気標本"
                         />
                       </a>
                       <div>
-                        <p class="caption">XXXXXXX</p>
+                        <p class="caption">空気標本</p>
                       </div>
                     </div>
                   </div>

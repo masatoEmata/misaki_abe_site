@@ -6,14 +6,14 @@ import CardContent from "@material-ui/core/CardContent";
 import NeuButton from "./NeuButton";
 
 export default function WorkCard(props) {
-  const { title, description, size, create_date, img_url, path } = props;
+  const { title, description, size, create_date, img_url_mini, path } = props;
   const work = props;
-  const availabile_label = work.availability ? "販売中" : null;
+  const availabile_label = work.availability ? "販売中" : "";
 
   return (
     <Card class="cardContainer">
       {/* <CardMedia class="cardMedia" image={img_url} title={title} /> */}
-      <img class="cardMedia" src={img_url} alt={title} />
+      <img class="cardMedia" src={img_url_mini} alt={title} />
       <CardContent class="cardContent">
         <CardContent class="cardContentInner">
           <h3 class="threadHeadingMini">{title}</h3>

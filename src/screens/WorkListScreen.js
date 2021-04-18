@@ -9,7 +9,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Thread from "../components/Thread";
 import WorkCard from "../components/WorkCard";
-import Switch from "../components/Switch";
+// import Switch from "../components/Switch";
 import { dateToString } from "../utils/dateToString";
 
 export default function SalesList() {
@@ -20,9 +20,6 @@ export default function SalesList() {
     canonical: "/works/",
     meta: {
       charset: "utf-8",
-      name: {
-        keywords: "react,meta,document,html,tags",
-      },
     },
   };
 
@@ -40,13 +37,14 @@ export default function SalesList() {
           tmp_works.push({
             id: doc.id,
             title: data.title,
-            path: data.path,
+            path: doc.id,
             description: data.description,
             create_date: dateToString(data.create_date),
             size: data.size,
-            img_url: data.img_url,
+            img_url_mini: data.img_url_mini,
             availability: data.availability,
           });
+          console.log("mini", data.img_url_mini);
         });
         setWorks(tmp_works);
       },
@@ -91,7 +89,7 @@ export default function SalesList() {
                       description={work.description}
                       create_date={work.create_date}
                       size={work.size}
-                      img_url={work.img_url}
+                      img_url_mini={work.img_url_mini}
                       path={work.path}
                       availability={work.availability}
                     />

@@ -6,13 +6,20 @@ export default function Contact() {
     <section id="sectionOther" class="sectionOther">
       <Thread heading={"Profile"}>
         <div id="profile">
-          プロフィール記入プロフィール記入プロフィール記入プロフィール記入
-          <br />
-          プロフィール記入プロフィール記入プロフィール記入
-          <br />
-          プロフィール記入プロフィール記入プロフィール記入
-          <br />
-          プロフィール記入プロフィール記入プロフィール記入
+          <dl>
+            <dt>1999</dt>
+            <dd>大分県別府市生まれ</dd>
+          </dl>
+          <dt>2018</dt>
+          <dd>大分県立芸術緑丘高校卒業</dd>
+          <dl>
+            <dt>2021</dt>
+            <dd>東京藝術大学美術学部絵画科油画入学</dd>
+          </dl>
+          <dl>
+            <dt></dt>
+            <dd>現在は絵画を中心に、映像作品も手がけている。</dd>
+          </dl>
         </div>
       </Thread>
     </section>

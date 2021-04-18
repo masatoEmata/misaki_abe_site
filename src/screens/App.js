@@ -31,8 +31,7 @@ const App = () => {
     ref.onSnapshot((snapshot) => {
       const tmp_work_paths = [];
       snapshot.forEach((doc) => {
-        const data = doc.data();
-        tmp_work_paths.push(data.path);
+        tmp_work_paths.push(doc.id);
       });
       setWorks(tmp_work_paths);
     });

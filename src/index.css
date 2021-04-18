@@ -24,6 +24,14 @@
   font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
     "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
   line-height: 2;
+  padding: 0 10px;
+}
+@media screen and (min-width: 480px) {
+  .passage {
+    padding: 0 30px;
+    margin: auto;
+    max-width: 600px;
+  }
 }
 .label {
   font-size: 13px;
@@ -238,7 +246,6 @@ link {
 @media screen and (min-width: 480px) {
   .cardContentDetail {
     padding: 10px;
-    margin: auto;
     width: 60%;
   }
 }
@@ -268,4 +275,7 @@ link {
 }
 .cardActionDetail {
   margin-top: 25px;
+}
+dt {
+  float: left;
 }

@@ -15,9 +15,6 @@ export default function ContactScreen() {
     canonical: "/profile/",
     meta: {
       charset: "utf-8",
-      name: {
-        keywords: "react,meta,document,html,tags",
-      },
     },
   };
 
