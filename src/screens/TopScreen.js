@@ -50,13 +50,17 @@ export default function TopScreen() {
               </section>
               <section class="topSingleText passage">
                 <p>
-                  感覚を保存したい。
+                  記憶とイメージの融合。
                   <br />
-                  道を歩いているときの静かな感覚と感情。
                   <br />
-                  淡い光と陰がゆっくりと移ろう時間。
+                  生まれ育った別府の湯気の記憶が、
                   <br />
-                  そのとき感じる、温度と湿度。
+                  時間の経過とともに抜け落ちていく。
+                  <br />
+                  <br />
+                  それを今の自分が補う。
+                  <br />
+                  ロシアの霧深い映画のシーンで。 雨の日の煙草の匂いで。
                 </p>
               </section>
               <section class="multiDisplay">
@@ -107,11 +111,14 @@ export default function TopScreen() {
               </section>
               <section class="topSingleText passage">
                 <p>
-                  ゆりかごのような絵が描けたらと思う。
+                  過去の体験と、今の私のイメージが混交した、
                   <br />
-                  それは、こころが安らかになる空気の空間。
+                  新たな虚実の空間と感覚を作りたい。
                   <br />
-                  過去の記憶と、どこかで見聞きした情報の混じった、非現実的な空間。
+                  <br />
+                  この空間と感覚は、私の新たな経験と情報により、
+                  <br />
+                  絶え間なく更新されていく。
                 </p>
               </section>
             </section>
