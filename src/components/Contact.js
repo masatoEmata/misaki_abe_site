@@ -5,6 +5,9 @@ export default function Contact() {
   const [detail, setDetail] = useState();
   const [email, setEmail] = useState();
   const [buttonDisabled, setButtonDisabled] = useState(true);
+  const [buttonShadowSelecor, setButtonShadowSelecor] = useState(
+    "neuButton label disableButtonShadow"
+  );
 
   function handleChange(e) {
     switch (e.target.name) {
@@ -17,7 +20,6 @@ export default function Contact() {
       default:
     }
   }
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://sdk.form.run/js/v2/formrun.js";
@@ -31,8 +33,10 @@ export default function Contact() {
   useEffect(() => {
     if (detail && email) {
       setButtonDisabled(false);
+      setButtonShadowSelecor("neuButton label");
     } else {
       setButtonDisabled(true);
+      setButtonShadowSelecor("neuButton label disableButtonShadow");
     }
   });
 
@@ -61,7 +65,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            class="neuButton label"
+            class={buttonShadowSelecor}
             disabled={buttonDisabled}
           >
             送信する
