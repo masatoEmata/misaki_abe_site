@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import firebase from "firebase";
 
 import { dateToString } from "../utils/dateToString";
+import { numComma } from "../utils/numComma";
 
 export default function DetailScreen(props) {
   const history = useHistory();
@@ -43,10 +44,13 @@ export default function DetailScreen(props) {
             img_url: data.img_url,
             availability: data.availability,
             materials: data.materials,
+            price: data.price,
           };
           setWork(tmp_work);
           if (tmp_work.availability) {
-            setAvailabileLabel("販売中");
+            const commaPrice = numComma(tmp_work.price);
+            setAvailabileLabel(`販売中 ${commaPrice}`);
+            // setAvailabileLabel("販売中");
           }
         } else {
           // doc.data() will be undefined in this case

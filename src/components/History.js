@@ -4,8 +4,8 @@ import Thread from "./Thread";
 export default function Contact() {
   return (
     <section id="sectionOther" class="sectionOther">
-      <Thread heading={"Profile"}>
-        <div id="profile">
+      <Thread heading={"History"}>
+        <div id="History">
           <dl>
             <dt>1999</dt>
             <dd>大分県別府市生まれ</dd>

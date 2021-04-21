@@ -107,6 +107,7 @@ link {
 }
 .multiDisplayLarge {
   margin-top: 100px;
+  margin-left: 8vw;
   align-items: center;
 }
 .multiDisplayLargeImg {

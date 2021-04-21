@@ -4,7 +4,7 @@ import Thread from "./Thread";
 export default function Contact() {
   const [detail, setDetail] = useState();
   const [email, setEmail] = useState();
-  const [buttonLabel, setButtonLabel] = useState();
+  const [buttonDisabled, setButtonDisabled] = useState(true);
 
   function handleChange(e) {
     switch (e.target.name) {
@@ -30,9 +30,9 @@ export default function Contact() {
 
   useEffect(() => {
     if (detail && email) {
-      setButtonLabel("送信");
+      setButtonDisabled(false);
     } else {
-      setButtonLabel("ご入力後に送信");
+      setButtonDisabled(true);
     }
   });
 
@@ -59,8 +59,12 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <button type="submit" class="neuButton label">
-            {buttonLabel}
+          <button
+            type="submit"
+            class="neuButton label"
+            disabled={buttonDisabled}
+          >
+            送信する
           </button>
         </form>
       </Thread>

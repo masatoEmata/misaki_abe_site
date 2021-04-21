@@ -5,7 +5,7 @@ import DocumentMeta from "react-document-meta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import Profile from "../components/Profile";
+import History from "../components/History";
 
 export default function TopScreen() {
   useEffect(() => {
@@ -98,7 +98,7 @@ export default function TopScreen() {
                       <a href="/works/detail/air-specimen/">
                         <img
                           class="multiDisplaySmallImg neumoOutShadow"
-                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fair-specimen_770x770.JPG?alt=media&token=d543816f-ec00-4831-a7c6-0b7238a2b262"
+                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fair-specimen_770x770.JPG?alt=media&token=4f5269cc-5c02-4211-85e5-86c8ed9d2679"
                           alt="空気標本"
                         />
                       </a>
@@ -111,18 +111,18 @@ export default function TopScreen() {
               </section>
               <section class="topSingleText passage">
                 <p>
-                  過去の体験と、今の私のイメージが混交した、
+                  過去の私の体験と、今のイメージが混交した、
                   <br />
-                  新たな虚実の空間と感覚を作りたい。
+                  主観的な空間を記録したい。
                   <br />
                   <br />
-                  この空間と感覚は、私の新たな経験と情報により、
+                  それは新たな経験と情報により、
                   <br />
                   絶え間なく更新されていく。
                 </p>
               </section>
             </section>
-            <Profile />
+            <History />
             <Contact />
           </main>
           <Footer />

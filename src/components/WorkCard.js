@@ -3,13 +3,13 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 // import CardMedia from "@material-ui/core/CardMedia";
+
 import NeuButton from "./NeuButton";
 
 export default function WorkCard(props) {
   const { title, description, size, create_date, img_url_mini, path } = props;
   const work = props;
-  const availabile_label = work.availability ? "販売中" : "";
-
+  const availabile_label = work.availability ? "販売中" : ""; // 作品を見て欲しいので価格は表示しない
   return (
     <Card class="cardContainer">
       {/* <CardMedia class="cardMedia" image={img_url} title={title} /> */}
