@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import DocumentMeta from "react-document-meta";
+import { useHistory } from "react-router-dom";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -26,6 +27,8 @@ export default function TopScreen() {
     },
   };
 
+  const history = useHistory();
+
   return (
     <DocumentMeta {...meta}>
       <React.Fragment>
@@ -35,14 +38,20 @@ export default function TopScreen() {
           <main class="mainContainer">
             <section class="topWorkDisplay">
               <section class="topSingleDisplay">
-                <div class="topSingleDisplayItem">
-                  <a href="/works/detail/before-going-to-sleep/">
-                    <img
-                      class="topSingleDisplayImg neumoOutShadow"
-                      src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fbefore-going-to-sleep.jpg?alt=media&token=f6af4183-b6d3-4ccf-8cf3-6e90a58503a2"
-                      alt="ねむるまえ"
-                    />
-                  </a>
+                <div
+                  class="topSingleDisplayItem"
+                  onClick={() => {
+                    history.push({
+                      pathname: "/works/detail/before-going-to-sleep/",
+                    });
+                  }}
+                >
+                  <img
+                    class="topSingleDisplayImg neumoOutShadow"
+                    src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fbefore-going-to-sleep.jpg?alt=media&token=f6af4183-b6d3-4ccf-8cf3-6e90a58503a2"
+                    alt="ねむるまえ"
+                  />
+                  {/* </a> */}
                   <div>
                     <p class="caption">ねむるまえ</p>
                   </div>
@@ -66,14 +75,18 @@ export default function TopScreen() {
               <section class="multiDisplay">
                 <div class="multiDisplayLarge">
                   <div>
-                    <div>
-                      <a href="/works/detail/day-dream/">
-                        <img
-                          class="multiDisplayLargeImg neumoOutShadow"
-                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fday-dream_770x770.jpg?alt=media&token=261f047b-93e0-4e88-b614-bc9c8a6a027e"
-                          alt="白昼夢"
-                        />
-                      </a>
+                    <div
+                      onClick={() => {
+                        history.push({
+                          pathname: "/works/detail/day-dream/",
+                        });
+                      }}
+                    >
+                      <img
+                        class="multiDisplayLargeImg neumoOutShadow"
+                        src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fday-dream_770x770.jpg?alt=media&token=261f047b-93e0-4e88-b614-bc9c8a6a027e"
+                        alt="白昼夢"
+                      />
                       <div>
                         <p class="caption">白昼夢</p>
                       </div>
@@ -82,26 +95,34 @@ export default function TopScreen() {
                 </div>
                 <div class="multiDisplaySmall">
                   <div>
-                    <div>
-                      <a href="/works/detail/the-night-before-the-light/">
-                        <img
-                          class="multiDisplaySmallImg neumoOutShadow"
-                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fthe-night-before-the-light_770x770.JPG?alt=media&token=5d7e6694-dc9d-4656-a32b-2a310e31804c"
-                          alt="光芒前夜"
-                        />
-                      </a>
+                    <div
+                      onClick={() => {
+                        history.push({
+                          pathname: "/works/detail/the-night-before-the-light/",
+                        });
+                      }}
+                    >
+                      <img
+                        class="multiDisplaySmallImg neumoOutShadow"
+                        src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fthe-night-before-the-light_770x770.JPG?alt=media&token=5d7e6694-dc9d-4656-a32b-2a310e31804c"
+                        alt="光芒前夜"
+                      />
                       <div>
                         <p class="caption">光芒前夜</p>
                       </div>
                     </div>
-                    <div>
-                      <a href="/works/detail/air-specimen/">
-                        <img
-                          class="multiDisplaySmallImg neumoOutShadow"
-                          src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fair-specimen_770x770.JPG?alt=media&token=4f5269cc-5c02-4211-85e5-86c8ed9d2679"
-                          alt="空気標本"
-                        />
-                      </a>
+                    <div
+                      onClick={() => {
+                        history.push({
+                          pathname: "/works/detail/air-specimen/",
+                        });
+                      }}
+                    >
+                      <img
+                        class="multiDisplaySmallImg neumoOutShadow"
+                        src="https://firebasestorage.googleapis.com/v0/b/misaki-abe.appspot.com/o/works%2Fthumbnails%2Fair-specimen_770x770.JPG?alt=media&token=4f5269cc-5c02-4211-85e5-86c8ed9d2679"
+                        alt="空気標本"
+                      />
                       <div>
                         <p class="caption">空気標本</p>
                       </div>
