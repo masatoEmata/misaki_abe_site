@@ -5,7 +5,7 @@ export default function Thread(props) {
   return (
     <div class="thread">
       <h2 class="threadHeading">{heading}</h2>
-      <p class="passage">{children}</p>
+      <div class="passage">{children}</div>
     </div>
   );
 }

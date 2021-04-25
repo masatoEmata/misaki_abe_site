@@ -59,47 +59,49 @@ export default function SalesList() {
     let unsubscribe = () => {};
     unsubscribe = getFirestore(unsubscribe);
     return unsubscribe;
-  });
+  }, []);
 
   return (
     <DocumentMeta {...meta}>
       <React.Fragment>
         <CssBaseline />
-        <Header />
-        <main>
-          {/* Hero unit */}
-          <div class="listSection">
-            <Container maxWidth="sm">
-              <Thread heading={"Oil Painting"}></Thread>
-              <div>
-                <Grid container spacing={2} justify="center">
-                  {/* <Switch/> */}
-                </Grid>
-              </div>
-            </Container>
-          </div>
-          {/* End hero unit */}
-          <div class="listSection">
-            <Container class="listCardGrid">
-              <Grid container spacing={4}>
-                {works.map((work) => (
-                  <Grid key={work.id} item xs={12} sm={6} md={6}>
-                    <WorkCard
-                      title={work.title}
-                      description={work.description}
-                      create_date={work.create_date}
-                      size={work.size}
-                      img_url_mini={work.img_url_mini}
-                      path={work.path}
-                      availability={work.availability}
-                    />
+        <div class="container">
+          <Header />
+          <main>
+            {/* Hero unit */}
+            <div class="listSection">
+              <Container maxWidth="sm">
+                <Thread heading={"Oil Painting"}></Thread>
+                <div>
+                  <Grid container spacing={2} justify="center">
+                    {/* <Switch/> */}
                   </Grid>
-                ))}
-              </Grid>
-            </Container>
-          </div>
-        </main>
-        <Footer />
+                </div>
+              </Container>
+            </div>
+            {/* End hero unit */}
+            <div class="listSection">
+              <Container class="listCardGrid">
+                <Grid container spacing={4}>
+                  {works.map((work) => (
+                    <Grid key={work.id} item xs={12} sm={6} md={6}>
+                      <WorkCard
+                        title={work.title}
+                        description={work.description}
+                        create_date={work.create_date}
+                        size={work.size}
+                        img_url_mini={work.img_url_mini}
+                        path={work.path}
+                        availability={work.availability}
+                      />
+                    </Grid>
+                  ))}
+                </Grid>
+              </Container>
+            </div>
+          </main>
+          <Footer />
+        </div>
       </React.Fragment>
     </DocumentMeta>
   );

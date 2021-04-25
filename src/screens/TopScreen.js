@@ -34,7 +34,7 @@ export default function TopScreen() {
       <React.Fragment>
         <CssBaseline />
         <div class="container">
-          <Header shadow="none" />
+          <Header />
           <main class="mainContainer">
             <section class="topWorkDisplay">
               <section class="topSingleDisplay">

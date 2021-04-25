@@ -23,7 +23,7 @@ export default function ContactScreen() {
       <React.Fragment>
         <CssBaseline />
         <div class="container">
-          <Header shadow="none" />
+          <Header />
           <main class="mainContainer" style={{ textAlign: "center" }}>
             <History />
             <NeuButton path="/contact/">質問する</NeuButton>

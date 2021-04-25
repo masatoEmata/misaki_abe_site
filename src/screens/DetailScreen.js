@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import NeuButton from "../components/NeuButton";
 import Footer from "../components/Footer";
-import ScrollTop from "../components/ScrollTop";
+// import ScrollTop from "../components/ScrollTop";
 import DocumentMeta from "react-document-meta";
 import { useHistory } from "react-router-dom";
 import firebase from "firebase";
 
+import Header from "../components/Header";
 import { dateToString } from "../utils/dateToString";
 import { numComma } from "../utils/numComma";
 
@@ -50,25 +51,24 @@ export default function DetailScreen(props) {
           if (tmp_work.availability) {
             const commaPrice = numComma(tmp_work.price);
             setAvailabileLabel(`販売中 ${commaPrice}`);
-            // setAvailabileLabel("販売中");
           }
         } else {
-          // doc.data() will be undefined in this case
           console.log("No such document!");
         }
       })
       .catch((error) => {
         console.log("Error getting document:", error);
       });
-  }, []);
+  }, [path]);
 
   return (
     <DocumentMeta {...meta}>
       <React.Fragment>
         <CssBaseline />
-        <ScrollTop />
-        <main>
-          <div class="container">
+        {/* <ScrollTop /> */}
+        <div class="container">
+          <Header />
+          <main>
             <div class="detailCard">
               <img class="detailImg" src={work.img_url} alt={work.title} />
               <div class="cardContentDetail">
@@ -89,8 +89,8 @@ export default function DetailScreen(props) {
               <NeuButton>質問する</NeuButton> */}
               <NeuButton path="/contact/">質問または購入する</NeuButton>
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
         <Footer />
       </React.Fragment>
     </DocumentMeta>

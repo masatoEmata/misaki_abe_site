@@ -22,7 +22,7 @@ export default function ContactScreen() {
       <React.Fragment>
         <CssBaseline />
         <div class="container">
-          <Header shadow="none" />
+          <Header />
           <main class="mainContainer">
             <Contact />
           </main>

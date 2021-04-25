@@ -42,36 +42,36 @@ export default function Contact() {
 
   return (
     <section id="sectionContact" class="sectionOther">
-      <Thread heading={"Contact"}>
-        <form
-          action="https://form.run/api/v1/r/mb1qe2q6lkuok0zvdsmv51ip"
-          method="post"
+      <Thread heading={"Contact"} />
+
+      <form
+        action="https://form.run/api/v1/r/mb1qe2q6lkuok0zvdsmv51ip"
+        method="post"
+      >
+        <div>
+          <textarea
+            name="お問い合わせ"
+            placeholder="お問い合わせ内容"
+            onChange={handleChange}
+          ></textarea>
+        </div>
+        <div>
+          <input
+            name="メールアドレス"
+            type="text"
+            data-formrun-type="email"
+            placeholder="メールアドレス"
+            onChange={handleChange}
+          />
+        </div>
+        <button
+          type="submit"
+          class={buttonShadowSelecor}
+          disabled={buttonDisabled}
         >
-          <div>
-            <textarea
-              name="お問い合わせ"
-              placeholder="お問い合わせ内容"
-              onChange={handleChange}
-            ></textarea>
-          </div>
-          <div>
-            <input
-              name="メールアドレス"
-              type="text"
-              data-formrun-type="email"
-              placeholder="メールアドレス"
-              onChange={handleChange}
-            />
-          </div>
-          <button
-            type="submit"
-            class={buttonShadowSelecor}
-            disabled={buttonDisabled}
-          >
-            送信する
-          </button>
-        </form>
-      </Thread>
+          送信する
+        </button>
+      </form>
     </section>
   );
 }

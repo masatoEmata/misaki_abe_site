@@ -19,7 +19,7 @@ export default function ContactThanksScreen() {
       <React.Fragment>
         <CssBaseline />
         <div class="container">
-          <Header shadow="none" />
+          <Header />
           <main class="mainContainer">
             <Thread heading={"Thanks"}>
               この度はお問い合わせいただき、誠にありがとうございます。追って内容を確認いたしますので、もうしばらくお待ちください。
