@@ -25,6 +25,23 @@ export default function SalesList() {
 
   const [works, setWorks] = useState([]);
 
+  useEffect(() => {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l !== "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PQ27B5M");
+
+    let unsubscribe = () => {};
+    unsubscribe = getFirestore(unsubscribe);
+    return unsubscribe;
+  }, []);
+
   function getFirestore(unsubscribe) {
     const db = firebase.firestore();
     const ref = db.collection("works").orderBy("create_date", "desc");
@@ -44,7 +61,6 @@ export default function SalesList() {
             img_url_mini: data.img_url_mini,
             availability: data.availability,
           });
-          console.log("mini", data.img_url_mini);
         });
         setWorks(tmp_works);
       },
@@ -54,12 +70,6 @@ export default function SalesList() {
     );
     return unsubscribe;
   }
-
-  useEffect(() => {
-    let unsubscribe = () => {};
-    unsubscribe = getFirestore(unsubscribe);
-    return unsubscribe;
-  }, []);
 
   return (
     <DocumentMeta {...meta}>
